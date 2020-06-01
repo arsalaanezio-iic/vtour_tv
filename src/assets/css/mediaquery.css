@@ -1,0 +1,302 @@
+
+
+@media screen and (min-width:1680px){
+    .leftsection{margin-top:-120px !important;margin-bottom:100px !important}
+  .rightSection{width:1100px !important;}
+  .rightBig{width:700px !important;height:460px !important;}
+  .leftsmall{width:250px !important;height:250px;}
+  .leftsmall .leftMainImage{width:160px !important;height:auto !important;}
+  .middleLayer{width:450px !important;height:256px !important;top:-108px;left:160px !important;}
+  .vtourText{width:150px !important;height:50px !important;top:-180px !important;font-size:30px !important;left:300px !important}
+  .vtourText::before{height:30px !important}
+.firstLine{margin-top:0px !important}
+  .firstLine, .secondLine, .thirdLine{font-size:65px !important;}
+ .backgroundAdjust{padding-top:200px !important}
+
+ .requestDemoButtonLite, .affiliatesButton{font-size:20px !important;}
+
+ .heading{font-size:50px !important;letter-spacing: 2px !important;font-weight: 900 !important;}
+
+ .flexer div img{width:90px !important;}
+ .flexerdivtext{font-size:25px !important;}
+
+ .outer-image-wrapper{width:550px !important;}
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .gridder-child {
+        flex: 0 0 50% !important;
+        margin: 10px auto !important;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .rightSection {
+        position: relative !important;
+        margin: 50px auto 20px auto !important;
+        right: 50px !important;
+        transform: scale(0.7) !important;
+    }
+    .buttonWrapper {
+        display: none !important
+    }
+    .buttonWrapperMobile {
+        display: flex !important;
+        justify-content: center;
+        margin-top: 30px !important;
+    }
+    .adjuster {
+        margin: 30px 0px !important;
+    }
+    .flexer div {
+        flex: 0 0 33.333% !important;
+    }
+    .leftsection {
+        height: auto !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .comingsoonHolder {
+        display: none !important;
+    }
+    .howitworks-section {
+        margin: 0px !important;
+    }
+    .howItWorksWrapper {
+        display: block !important;
+    }
+    .leftImageWrapper {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0px !important
+    }
+    .feature-image-wrapper {
+        margin: 20px 0px !important;
+    }
+    .leftsectionfeature {
+        padding: 50px 0px 0px 20px !important;
+    }
+    .features-flexer-child{
+        min-height:auto !important;
+    }
+    .backgroundAdjust{padding-top:30px !important;padding-bottom:30px !important;}
+
+    .form-flex{flex: 0 0 100% !important;}
+    .form-flex form{margin:20px auto !important}
+    .form-flex:nth-child(2){
+        padding:0px !important;
+    }
+.formflexer{width:600px !important;padding-bottom:30px !important}
+    .address-section, .phone-section{width:400px ;margin:10px auto;}
+}
+
+@media screen and (max-width:991px) {
+    .flexWrapper2main {
+        width: 100% !important
+    }
+    .menulinkwrapper {
+        display: none !important;
+    }
+    .features-container {
+        width: 100% !important;
+    }
+    .features-flexer-child {
+        flex: 0 0 100% !important;
+    }
+    .question-child {
+        flex: 0 0 100% !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .rightSection {
+        width: 300px !important;
+        height: 200px !important;
+        right: 0px !important;
+        transform: scale(1) !important;
+    }
+    .leftsmall {
+        width: 100px !important;
+        height: 100px !important;
+        left: -10px !important
+    }
+    .leftsmall img {
+        padding: 15px 20px !important;
+        width: 100% !important;
+        margin: 0px !important
+    }
+    .rightBig {
+        width: 200px !important;
+        height: 150px !important;
+        right: -10px !important;
+    }
+    .middleLayer {
+        width: 150px !important;
+        height: 82px !important;
+        top: 17px;
+        left: 40px;
+    }
+    /* .buttonWrapper {
+        display: block !important;
+        text-align: center !important;
+    } */
+    .requestDemoButtonLite {
+        font-size: 14px !important;
+    }
+    .requestDemoButtonLite, .requestDemoButtonDark, .affiliatesButton{
+        margin: 10px 0px 10px 10px !important;
+        font-size: 14px !important;
+        padding: 10px 50px !important
+    }
+
+    .submitButton{
+        margin: 10px 0px 10px 25px !important;
+        font-size: 14px !important;
+        padding: 10px 50px !important
+    }
+    .rightBig img {
+        padding: 15px 5px !important;
+    }
+    .vtourText {
+        left: 50px !important;
+        top: -35px !important;
+    }
+    .flexer div {
+        flex: 0 0 50% !important;
+        margin: 10px auto !important;
+    }
+    .flexWrapper2Child {
+        flex: 0 0 100% !important;
+        margin: 10px auto !important;
+    }
+    .firstLine, .secondLine, .thirdLine {
+        font-size: 24px !important;
+    }
+    .adjuster {
+        padding: 0px !important;
+        margin: 30px auto !important;
+    }
+    .requestDemoButtonLite {
+        margin: 10px auto !important;
+    }
+    .heading {
+        font-size: 35px !important;
+        letter-spacing: 0px !important;
+    }
+    .fluid-adjuster {
+        padding: 20px 0px !important;
+    }
+    .native {
+        font-size: 10px !important
+    }
+    .support {
+        font-size: 10px !important;
+        bottom: -20px !important
+    }
+    .support img {
+        padding: 0px !important;
+        width: 60px !important
+    }
+    .gridder-child {
+        flex: 0 0 100%;
+        padding: 0px !important;
+    }
+    .adjustment {
+        padding-bottom: 200px !important
+    }
+    .leftnavigation {
+        left: -10px !important;
+        z-index: 1
+    }
+    .rightnavigation {
+        right: -10px !important;
+        z-index: 1;
+    }
+    /* .eventSlider div .slideimage{padding-right:20px !important;} */
+    .customer-flex-child {
+        flex: 0 0 33.33% !important;
+    }
+    .backgroundAdjust{padding-top:0px !important}
+
+    .ios-icon img{padding:0px !important}
+.android-icon img{padding:0px !important}
+.ios-icon{bottom:0px !important;width:11px !important;left:30px;}
+.android-icon{bottom:0px !important;width:11px !important;right:30px;}
+/* .template-image{display:none !important;} */
+.templateImageWrapper{display:block !important;min-height:300px !important}
+.formflexer{width:100% !important;}
+.form-flex form{margin:0px auto !important;}
+.template-image img{padding-top:50px !important}
+.desktopFilter{display:none !important}
+}
+
+
+@media screen and (max-width:601px) {
+    .contact-form {
+        width: 100% !important;
+        border:1px solid transparent !important;
+    }
+    .address-section, .phone-section{width:100% ;}
+    .footer-address{display:block !important;text-align:center !important}
+    .filterMenu{width:95% !important;}
+    .filterOptions{font-size:13px !important;}
+}
+
+@media screen and (max-width:500px) {
+    .howitworks-para {
+        padding-right: 0px !important;
+    }
+    .howitworksChild:nth-child(2) {
+        padding: 20px !important
+    }
+    .template-image {
+        /* height: 200px !important; */
+        object-fit: cover !important;
+    }
+    .feature-image-wrapper {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+    .features-flexer-child {
+        min-height: auto !important;
+    }
+    .features-flexer-child {
+        padding: 10px !important;
+    }
+    .firstHead {
+        width: 100% !important;
+    }
+    .firsthead-para {
+        padding-right: 10px !important
+    }
+    .customer-flex-child {
+        flex: 0 0 50% !important;
+    }
+    .question-box {
+        width: 100% !important;
+    }
+    .form__group {
+        width: 100% !important;
+    }
+
+    .outer-image-wrapper {
+        margin-left: 0px !important;
+        width: 100% !important;
+        margin: 0px !important;
+    }
+
+    /* .heading {
+        font-size: 24px !important;
+        letter-spacing: 0px !important;
+    } */
+
+    .submitButton{margin:10px auto !important;display:block !important;width:100% !important;padding:10px 50px !important}
+    .animatingit{margin:0px auto !important;display:block !important;padding:10px 50px !important;}
+}
+
+@media screen and (max-width:400px){
+    .buttonWrapperMobile{display:block !important;text-align:center !important}
+    
+}

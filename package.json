@@ -3,11 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run serve:ssr --proxy-config proxy.config.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "dev:ssr": "ng run vtourtv:serve-ssr",
+    "serve:ssr": "node dist/vtourtv/server/main.js",
+    "build:ssr": "ng build --prod && ng run vtourtv:server:production",
+    "prerender": "ng run vtourtv:prerender"
   },
   "private": true,
   "dependencies": {
@@ -16,10 +20,16 @@
     "@angular/compiler": "~9.1.0",
     "@angular/core": "~9.1.0",
     "@angular/forms": "~9.1.0",
+    "@angular/http": "^7.2.16",
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
+    "@angular/platform-server": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "@nguniversal/express-engine": "^9.1.1",
+    "express": "^4.15.2",
+    "ngx-slick-carousel": "^0.5.0",
     "rxjs": "~6.5.4",
+    "slick-carousel": "^1.8.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
@@ -28,6 +38,8 @@
     "@angular/cli": "~9.1.0",
     "@angular/compiler-cli": "~9.1.0",
     "@angular/language-service": "~9.1.0",
+    "@nguniversal/builders": "^9.1.1",
+    "@types/express": "^4.17.0",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
