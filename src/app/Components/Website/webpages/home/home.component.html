@@ -7,7 +7,7 @@
 
 <!-- Banner  -->
 <div class="container-fluid backgroundLayer">
-    <div class="backgroundAdjust" style="min-height:500px;padding-top:100px;">
+    <div class="backgroundAdjust" style="min-height:500px;padding-top:200px;">
         <div class="col-lg-12 adjuster" style="position:relative;margin:80px auto">
             <div class="col-lg-7 leftsection">
                 <div class="firstLine">Ultimate virtualization Platform</div>
@@ -67,14 +67,14 @@
 <!-- Hosting Info  -->
 <div class="container-fluid fluid-adjuster" style="padding:50px 0px">
     <div class="flexWrapper">
-        <h2 class="text-center heading">What Can Vtour Host For You</h2>
+        <h1 class="text-center heading">What Can Vtour Host For You</h1>
         <div class="flexer" style="display:flex;">
             <div class="flexerdiv">
                 <div class="text-center">
                     <img src="assets/homepage/townhall.png" />
                 </div>
                 <div class="text-center flexerdivtext">
-                    Townhall
+                    Trade Shows
                 </div>
             </div>
 
@@ -126,6 +126,7 @@
     </div>
 </div>
 
+
 <!-- simpler than you think  -->
 
 <div class="container-fluid" style="padding:50px 0px; background:#f8f8f8">
@@ -143,8 +144,9 @@
                 </div>
                 <div class="imageTexter">
                     <div class="imagetexterHeading">Login</div>
-                    <div class="text-center imageTexterPara">Vtour is designed for both web and mobile. Sign in via
-                        our app or browser.</div>
+                    <div class="text-center imageTexterPara">Vtour is designed for both web and mobile. Sign in via our
+                        app or browser from any device.
+                    </div>
                 </div>
             </div>
             <div class="gridder-child">
@@ -206,7 +208,9 @@
 
                 <div class="imageTexter">
                     <div class="imagetexterHeading">Broadcast</div>
-                    <div class="text-center imageTexterPara">Enjoy the live broadcast of an event.</div>
+                    <div class="text-center imageTexterPara">Enjoy the live broadcast of speakers, panelist,
+                        conferences, presentation, green screen and much more with extremely low latency anywhere in the
+                        world. </div>
                 </div>
             </div>
             <div class="gridder-child">
@@ -227,7 +231,8 @@
 
                 <div class="imageTexter">
                     <div class="imagetexterHeading">Network</div>
-                    <div class="text-center imageTexterPara">Get all the information of any upcoming events.</div>
+                    <div class="text-center imageTexterPara">Get in touch one on one with panelist, promotors and other
+                        attendees on chats / video calls and exchange information.</div>
                 </div>
             </div>
             <div class="gridder-child">
@@ -248,7 +253,8 @@
 
                 <div class="imageTexter">
                     <div class="imagetexterHeading">Freebies</div>
-                    <div class="text-center imageTexterPara">Enjoy goodies / freebies.</div>
+                    <div class="text-center imageTexterPara">Enjoy goodies / freebies and all the downloadables post
+                        event in 1 place.</div>
                 </div>
             </div>
         </div>
@@ -256,13 +262,22 @@
 
 </div>
 
-
+<!-- inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersectionHowitworks($event)" -->
 <!-- How it works  -->
 <div class="container-fluid howitworks-section">
     <div class="howItWorksWrapper">
         <div class="howitworksChild">
             <div class="leftImageWrapper">
-                <img src="assets/homepage/howitworks.png" width="100%" height="100%" style="object-fit:cover" />
+                <video id="howitworks" poster="/assets/homepage/videoposter.png" playsinline loop width="100%"
+                    height="100%" #howitworks>
+                    <source src="/assets/videos/howitworks.mp4" type="video/mp4">
+                </video>
+                <div class="playbutton" (click)="play_howitworks()">
+                    <img src="/assets/homepage/playicon.png" width="100%" />
+                </div>
+                <div class="pausebutton" (click)="pause_howitworks()">
+                    <i class="fa fa-pause" style="color:#fff;font-size:30px;"></i>
+                </div>
             </div>
         </div>
         <div class="howitworksChild">
@@ -280,6 +295,8 @@
     </div>
 </div>
 
+
+
 <!-- Templates to choose from  -->
 
 <div class="container-fluid" style="min-height:100px;background:#f8f8f8;padding:0px;">
@@ -289,11 +306,9 @@
         Easy to use templates, fully editable and completely responsible for your next AR event
     </div>
 
-    <!-- <div class="text-center">
-        <button class="btn btn-default requestDemoButtonDark contacts-button">Request A Demo</button>
-    </div> -->
 
-    
+
+
 
     <div class="col-lg-12 filterSection" style="position:relative;background:#f0f0f0">
 
@@ -306,27 +321,27 @@
 
         <div class="desktopFilter" style="">
             <div class="template-image all">
-                <img class=""  src="assets/homepage/all.png" width="100%" />
+                <img class="" src="assets/homepage/all.png" width="100%" />
             </div>
 
             <div class="template-image agenda">
-                <img class=""  src="assets/homepage/templates/desktop-agenda.png" width="100%" />
+                <img class="" src="assets/homepage/templates/desktop-agenda.png" width="100%" />
             </div>
 
             <div class="template-image stall">
-                <img class=""  src="assets/homepage/templates/stall1.png" width="100%" />
-                <img class=""  src="assets/homepage/templates/stall2.png" width="100%" />
+                <img class="" src="assets/homepage/templates/stall1.png" width="100%" />
+                <img class="" src="assets/homepage/templates/stall2.png" width="100%" />
             </div>
 
             <div class="template-image lobby">
-                <img class=""  src="assets/homepage/all.png" width="100%" />
+                <img class="" src="assets/homepage/templates/lobby1.png" width="100%" />
+                <img class="" src="assets/homepage/templates/lobby2.png" width="100%" />
+                <img class="" src="assets/homepage/templates/lobby3.png" width="100%" />
             </div>
-            
-            <!-- <img class="template-image agenda"  src="assets/homepage/templates/desktop-agenda.png" width="100%" />
-            <img class="template-image stall"  src="assets/homepage/templates.png" width="100%" />
-            <img class="template-image lobby"  src="assets/homepage/templates.png" width="100%" /> -->
+
+
         </div>
-      
+
 
         <div class="templateImageWrapper">
             <div class="template-image all">
@@ -336,23 +351,22 @@
 
             <div class="template-image agenda">
                 <img src="assets/homepage/templates/agenda.png" width="100%" />
-                <!-- <img src="assets/homepage/templates2.png" width="100%" /> -->
             </div>
 
             <div class="template-image stall">
-                <img class=""  src="assets/homepage/templates/stall1.png" width="100%" />
-                <img class=""  src="assets/homepage/templates/stall2.png" width="100%" />
+                <img class="" src="assets/homepage/templates/stall1.png" width="100%" />
+                <img class="" src="assets/homepage/templates/stall2.png" width="100%" />
             </div>
 
             <div class="template-image lobby">
-                <img src="assets/homepage/templates/lobby.png" width="100%" />
-                <!-- <img src="assets/homepage/templates2.png" width="100%" /> -->
+                <img class="" src="assets/homepage/templates/lobby1.png" width="100%" />
+                <img class="" src="assets/homepage/templates/lobby2.png" width="100%" />
+                <img class="" src="assets/homepage/templates/lobby3.png" width="100%" />
             </div>
-           
+
         </div>
     </div>
 </div>
-
 
 <div class="container-fluid" style="background:#000;">
     <div class="flexWrapper2main">
@@ -395,6 +409,7 @@
 
 </div>
 
+
 <!-- 1 -->
 <div class="container-fluid">
     <div class="container features-container">
@@ -407,10 +422,11 @@
             <div class="features-flexer-child feature-right">
                 <div class="firstHead">Seamless Platform Across Web/App</div>
                 <div class="firstHead-underline"></div>
-                <div class="firsthead-para" style="">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="firsthead-para" style="">
+                    Easily access via your favorite web browser or through your mobile phone via our App for Android and
+                    iOS.
+
+                </div>
             </div>
         </div>
     </div>
@@ -426,10 +442,10 @@
             <div class="features-flexer-child leftsectionfeature">
                 <div class="firstHead">Extremely Low Latency</div>
                 <div class="firstHead-underline"></div>
-                <div class="firsthead-para" style="">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="firsthead-para" style="">
+                    We have invested heavily to ensure users enjoy very little delays between interactions and
+                    engagement with live presentations and networking.
+                </div>
             </div>
 
             <div class="features-flexer-child">
@@ -453,10 +469,10 @@
             <div class="features-flexer-child feature-right">
                 <div class="firstHead">Green Screen Live Feed</div>
                 <div class="firstHead-underline"></div>
-                <div class="firsthead-para" style="">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="firsthead-para" style="">
+                    Easily and quickly broadcast to your audience integrating with the virtual environment for an
+                    immersive and personal experience.
+                </div>
             </div>
         </div>
     </div>
@@ -472,10 +488,10 @@
             <div class="features-flexer-child leftsectionfeature">
                 <div class="firstHead">Dedicated Secure Servers</div>
                 <div class="firstHead-underline"></div>
-                <div class="firsthead-para" style="">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="firsthead-para" style="">
+                    At the core of our platform, a uniquely powerful infrastructure for performance and protection of
+                    your VTOUR experience and data.
+                </div>
             </div>
 
             <div class="features-flexer-child">
@@ -500,10 +516,10 @@
             <div class="features-flexer-child feature-right">
                 <div class="firstHead">Variety Of User Interaction</div>
                 <div class="firstHead-underline"></div>
-                <div class="firsthead-para" style="">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="firsthead-para" style="">
+                    Reality can't match what we can provide you and customers. Change the world and deliver a custom
+                    experience.
+                </div>
             </div>
         </div>
     </div>
@@ -519,10 +535,10 @@
             <div class="features-flexer-child leftsectionfeature">
                 <div class="firstHead">Immersive Virtual Lobby</div>
                 <div class="firstHead-underline"></div>
-                <div class="firsthead-para" style="">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="firsthead-para" style="">
+                    Allow your customers to access on a grand scale through familiar environments to meet and network
+                    pre and post event.
+                </div>
             </div>
 
             <div class="features-flexer-child">
@@ -531,29 +547,29 @@
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
-                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                          <li data-target="#myCarousel" data-slide-to="1"></li>
-                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
-                    
+
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
-                          <div class="item active">
-                            <img src="assets/homepage/virtualLobby1.png" style="width:100%;">
-                          </div>
-                    
-                          <div class="item">
-                            <img src="assets/homepage/virtualLobby2.png" style="width:100%;">
-                          </div>
-                        
-                          <div class="item">
-                            <img src="assets/homepage/virtualLobby3.png" style="width:100%;">
-                          </div>
+                            <div class="item active">
+                                <img src="assets/homepage/virtualLobby1.png" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/homepage/virtualLobby2.png" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/homepage/virtualLobby3.png" style="width:100%;">
+                            </div>
                         </div>
-                    
+
                         <!-- Left and right controls -->
-                     
-                      </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -573,10 +589,10 @@
             <div class="features-flexer-child feature-right">
                 <div class="firstHead">AR Support</div>
                 <div class="firstHead-underline"></div>
-                <div class="firsthead-para" style="">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="firsthead-para" style="">
+                    Never before has your event had access to the versatility of augmented reality. The world is your
+                    stage through the lens of your mobile device. You have to see this!
+                </div>
             </div>
         </div>
     </div>
@@ -592,10 +608,10 @@
             <div class="features-flexer-child leftsectionfeature">
                 <div class="firstHead">Dynamic, Versatile & Central Backend</div>
                 <div class="firstHead-underline"></div>
-                <div class="firsthead-para" style="">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="firsthead-para" style="">
+                    Powerful analytics. Now you have a 360 degree view on your event and its success. Metrics across
+                    engagement are just the beginning.
+                </div>
             </div>
 
             <div class="features-flexer-child">
@@ -607,7 +623,6 @@
         </div>
     </div>
 </div>
-
 
 
 <!-- events gallery  -->
@@ -631,84 +646,52 @@
     </div>
 </div>
 
-<!-- Trusted customers  -->
 
-<!-- <div class="container-fluid" style="background:#f8f8f8;padding:30px 15px;">
-    <div class="container">
-        <h2 class="text-center heading">Trusted Customers</h2>
-        <div class="heading-underline" style=""></div>
-        <div class="text-center container templates-para" style="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="customer-flexer">
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer1.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer2.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer3.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer4.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer5.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer6.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer7.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer8.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer9.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer10.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer11.png" width="120px" />
-            </div>
-            <div class="customer-flex-child text-center">
-                <img src="assets/homepage/customer12.png" width="120px" />
-            </div>
-        </div>
-    </div>
-</div> -->
 
 
 
 <!-- Contact Us  -->
 
-<div class="container-fluid contacts-section" style="padding:30px 15px;">
-    <div class="container">
+<div class="container-fluid contacts-section" style="padding:30px 0px 0px 0px;position:relative">
+    <!-- <div class="container">
         <h2 class="text-center heading">Contact Us</h2>
         <div class="heading-underline" style=""></div>
+    </div> -->
+
+    <div class="contact_heading" style="">
+        <div>CONTACT US / B0OK A DEMO</div>
+        <div style="width:100px;height:2px;background:#ffff;margin:10px auto;"></div>
     </div>
 
-    <div class="container formflexer" style="">
+
+
+    <div class="formflexer" style="padding:0px;">
+
+
+
         <div class="form-flex">
-            <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmitcontactForm(contactForm)" autocomplete="off">
+            <div class="maincontactheading" style="">
+                <div class="text-center">CONTACT US / B0OK A DEMO</div>
+                <div style="width:100px;height:2px;background:#ffff;margin:10px auto;"></div>
+            </div>
+            <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmitcontactForm(contactForm)"
+                autocomplete="off" style="">
                 <div class="form-group">
                     <div class="form-element">
                         <div class="form__group field">
-                            <input type="text" class="form__field" [ngClass]="{ 'is-invalid animated shake': submitted && validation.name.errors }" autocomplete="off" formControlName="name" placeholder="Name" name="name" id='name' required />
+                            <input type="text" class="form__field"
+                                [ngClass]="{ 'is-invalid animated shake': submitted && validation.name.errors }"
+                                autocomplete="off" formControlName="name" placeholder="Name" name="name" id='name'
+                                required />
                             <label for="name" class="form__label">Your Name</label>
                         </div>
                     </div>
 
                     <div class="form-element">
                         <div class="form__group field">
-                            <input type="email" class="form__field" [ngClass]="{ 'is-invalid animated shake': submitted && validation.email.errors }" autocomplete="off" formControlName="email" placeholder="Name" name="name" id='email'
+                            <input type="email" class="form__field"
+                                [ngClass]="{ 'is-invalid animated shake': submitted && validation.email.errors }"
+                                autocomplete="off" formControlName="email" placeholder="Name" name="name" id='email'
                                 required />
                             <label for="name" class="form__label">Email</label>
                         </div>
@@ -716,30 +699,73 @@
 
                     <div class="form-element">
                         <div class="form__group field">
-                            <input type="text" class="form__field" [ngClass]="{ 'is-invalid animated shake': submitted && validation.mobile_number.errors }" autocomplete="off" formControlName="mobile_number" placeholder="Name" name="name" id='email'
-                                required />
+                            <input type="text" class="form__field"
+                                [ngClass]="{ 'is-invalid animated shake': submitted && validation.mobile_number.errors }"
+                                autocomplete="off" formControlName="mobile_number" placeholder="Name" name="name"
+                                id='email' required (keypress)="keyPress($event)" minlength="10" maxlength="10" />
                             <label for="name" class="form__label">Mobile Number</label>
                         </div>
                     </div>
 
                     <div class="form-element">
                         <div class="form__group field">
-                            <textarea type="text" class="form__field" [ngClass]="{ 'is-invalid animated shake': submitted && validation.message.errors }" formControlName="message" autocomplete="off" rows="5" placeholder="Name" name="name"
+                            <textarea type="text" class="form__field"
+                                [ngClass]="{ 'is-invalid animated shake': submitted && validation.message.errors }"
+                                formControlName="message" autocomplete="off" rows="5" placeholder="Name" name="name"
                                 id='message' required></textarea>
                             <label for="name" class="form__label">Your Message</label>
                         </div>
                     </div>
 
-                    <div class="form-element">
+                    <div class="form-element text-center">
                         <button class="btn btn-default submitButton">Submit</button>
-                        <div class="btn btn-default affiliatesButton animatingit">Affiliates</div>
+                        <img id="img-linkedin" height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2366121&conversionId=2656348&fmt=gif" />
+                        <!-- <div class="btn btn-default affiliatesButton animatingit">Affiliates</div> -->
+                    
                     </div>
+                   
                 </div>
             </form>
         </div>
-        <div class="form-flex" style="padding:90px 50px;">
+
+
+        <div class="form-flex" style="padding:150px 5px 10px 5px;">
             <div class="address-section">
-                <div class="addressHeader" style="">LOCATION</div>
+                <div class="flagContainer">
+                    <img src="/assets/homepage/indiaBig.png" width="100%" />
+                </div>
+            </div>
+
+            <div class="phone-section">
+                <div class="flagContainer">
+                    <img src="/assets/homepage/australiaBig.png" width="100%" />
+                </div>
+
+            </div>
+
+            <div class="phone-section">
+                <div class="flagContainer">
+                    <img src="/assets/homepage/saudiBig.png" width="100%" />
+                </div>
+
+            </div>
+
+            <div class="phone-section">
+                <div class="flagContainer">
+                    <img src="/assets/homepage/qatarBig.png" width="100%" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-flex" style="padding:150px 5px 10px 5px;">
+
+
+            <div class="address-section alternative">
+                <div class="flagContainer">
+                    <img src="/assets/homepage/indiaBig.png" width="100%" />
+                </div>
+                <div class="addressHeader" style="">MUMBAI</div>
                 <div class="line1"></div>
                 <div class="line2"></div>
 
@@ -751,36 +777,174 @@
                 </div>
             </div>
 
-            <div class="phone-section">
+            <div class="address-section alternative-phone">
+                <div class="addressHeader" style="">PHONE</div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+
+                <div class="actualTextValue">
+                  <a class="phoneNumber" href="tel:+91-9930677169">+91-9930677169</a>
+                </div>
+
+                <div class="actualTextValue">
+                    <a class="phoneNumber" href="tel:+91-7506292169">+91-7506292169</a>                    
+                </div>
+                
+            </div>
+
+            <div class="phone-section alternative">
+                <div class="flagContainer">
+                    <img src="/assets/homepage/australiaBig.png" width="100%" />
+                </div>
+                <div class="addressHeader" style="">MELBOURNE</div>
+                <div class="phone-line1"></div>
+                <div class="phone-line2"></div>
+                <div class="actualTextValue">
+                    Melbourne700 Bourke St
+                </div>
+                <div class="actualTextValue">
+                    Docklands 3008
+                </div>
+
+            </div>
+
+            <div class="phone-section alternative-phone">
                 <div class="addressHeader" style="">PHONE</div>
                 <div class="phone-line1"></div>
                 <div class="phone-line2"></div>
+                <div class="actualTextValue">                
+                    <a class="phoneNumber" href="tel:+61390137078">+61390137078</a>
+                </div>
+                <div class="actualTextValue" style="opacity:0;">
+                    Docklands 3008
+                </div>
 
-                <div class="actualTextValue">
-                    Suman: +91-7506292169
-                </div>
-                <div class="actualTextValue">
-                    Manish: +91-9930677169
-                </div>
             </div>
 
-            <div class="phone-section">
-                <div class="addressHeader" style="">MAIL</div>
+            <div class="phone-section alternative">
+                <div class="flagContainer">
+                    <img src="/assets/homepage/saudiBig.png" width="100%" />
+                </div>
+                <div class="addressHeader" style="">RIYADH</div>
                 <div class="mail-line1"></div>
                 <div class="mail-line2"></div>
 
                 <div class="actualTextValue">
-                    mumbai@inkincaps.com
+                    Faisliah Office Tower
+                </div>
+                <div class="actualTextValue">
+                    Riyadh, Saudi Arabia
                 </div>
 
             </div>
+
+            <div class="phone-section alternative-phone">
+                <div class="addressHeader" style="">PHONE</div>
+                <div class="mail-line1"></div>
+                <div class="mail-line2"></div>
+
+                <div class="actualTextValue">
+                    <a class="phoneNumber" href="tel:+966 503898844">+966 503898844</a>
+                </div>
+                <div class="actualTextValue" style="opacity:0;">
+                    Riyadh, Saudi Arabia
+                </div>
+
+            </div>
+
+            <div class="phone-section alternative">
+                <div class="flagContainer">
+                    <img src="/assets/homepage/qatarBig.png" width="100%" />
+                </div>
+                <div class="addressHeader" style="">DOHA</div>
+                <div class="mail-line1"></div>
+                <div class="mail-line2"></div>
+
+                <div class="actualTextValue">
+                    Burj Alfardan - Lusail
+                    Mezzanine Floor, P.O. Box 40816, Doha, Qatar
+                </div>
+                <!-- <div class="actualTextValue">
+                    Doha, Qatar
+                </div> -->
+            </div>
+
+            <div class="phone-section alternative-phone">
+                <div class="addressHeader" style="">PHONE</div>
+                <div class="mail-line1"></div>
+                <div class="mail-line2"></div>
+
+                <!-- <div class="actualTextValue">
+                    +974 40193055
+                </div> -->
+                <div class="actualTextValue">
+                    <a class="phoneNumber" href="tel: +974 3318 2160"> +974 3318 2160</a>
+                </div>
+            </div>
+
         </div>
+
+
+        <div class="form-flex" style="padding:150px 15px 10px 15px;">
+            <div class="address-section">
+                <div class="addressHeader" style="">PHONE</div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+
+                <div class="actualTextValue">
+                    <a class="phoneNumber" href="tel:+91-9930677169">+91-9930677169</a>
+                </div>
+                <div class="actualTextValue">
+                    <a class="phoneNumber" href="tel:+91-7506292169">+91-7506292169</a>                    
+                </div>
+            </div>
+
+            <div class="phone-section">
+                <div class="addressHeader" style="">PHONE</div>
+                <div class="phone-line1"></div>
+                <div class="phone-line2"></div>
+                <div class="actualTextValue">                    
+                    <a class="phoneNumber" href="tel:+61390137078">+61390137078</a>
+                </div>
+                <div class="actualTextValue" style="opacity:0;">
+                    Docklands 3008
+                </div>
+
+            </div>
+
+            <div class="phone-section">
+                <div class="addressHeader" style="">PHONE</div>
+                <div class="mail-line1"></div>
+                <div class="mail-line2"></div>
+
+                <div class="actualTextValue">                    
+                    <a class="phoneNumber" href="tel:+966 503898844">+966 503898844</a>
+                </div>
+                <div class="actualTextValue" style="opacity:0;">
+                    Riyadh, Saudi Arabia
+                </div>
+
+            </div>
+
+            <div class="phone-section">
+                <div class="addressHeader" style="">PHONE</div>
+                <div class="mail-line1"></div>
+                <div class="mail-line2"></div>
+
+                <div class="actualTextValue">
+                    <a class="phoneNumber" href="tel: +974 3318 2160"> +974 3318 2160</a>
+                </div>
+            </div>
+
+        </div>
+
+
 
     </div>
 </div>
 
 <!-- Got a question  -->
-<div class="container-fluid" style="padding:30px 15px;">
+<!-- <div class="container-fluid" style="padding:30px 15px;">
     <div class="container">
         <h2 class="text-center heading">Got a Question ?</h2>
         <div class="heading-underline" style=""></div>
@@ -812,4 +976,4 @@
         <button class="btn btn-default bookademoButton contacts-button">Book A Demo</button>
     </div>
 
-</div>
+</div> -->

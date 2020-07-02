@@ -33,9 +33,14 @@ body {
 
 header {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
-    min-height: 70px;
+    min-height: 80px;
     background: #fff;
-    position: sticky;
+    position:fixed;
+    /* position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky; */
     top: 0px;
     z-index: 5;
     width: 100%;
@@ -51,28 +56,63 @@ header {
 }
 
 .menuSection {
-    width: 42px;
-    height: 30px;
+    width: 150px;
     margin: 20px 10px;
     border: 1px solid transparent;
 }
 
-.menuSection div:nth-child(1) {
-    width: 30px;
+.hamburger-wrapper {
+    display: none !important;
+}
+
+.hamburger-button {
+    padding: 0px !important;
+    margin-top: 8px;
+    border: none !important;
+    outline: none;
+    background: transparent !important;
+    background-color: transparent;
+    /* display:none; */
+}
+
+.dropdownMenuWrapper {
+    z-index: 99;
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    width: 200px;
+    /* min-height: 100px; */
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.dropdownMenuWrapper a:nth-child(1) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdownMenuWrapper a:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.hamburger-button div:nth-child(1) {
+    width: 25px;
     height: 2px;
     background: #000;
     margin: 5px;
 }
 
-.menuSection div:nth-child(2) {
-    width: 20px;
+.hamburger-button div:nth-child(2) {
+    width: 25px;
     height: 2px;
     background: #000;
     margin: 6px 5px;
 }
 
-.menuSection div:nth-child(3) {
-    width: 30px;
+.hamburger-button div:nth-child(3) {
+    width: 25px;
     height: 2px;
     background: #000;
     margin: 5px;
@@ -90,13 +130,19 @@ header {
 }
 
 .menulinkwrapper {
-    margin: 15px auto;
+    margin: 10px auto;
 }
 
 .menu-link {
     float: right;
     padding: 10px;
     cursor: pointer;
+}
+
+.lobby img {
+    width: 1000px;
+    margin: 20px auto;
+    display: block
 }
 
 .anchorTop {
@@ -372,6 +418,36 @@ header {
     text-align: center;
 }
 
+.alternative .flagContainer {
+    display: none
+}
+
+.alternative-phone {
+    display: none
+}
+
+.contact_heading {
+    width: 580px;
+    text-align: center;
+    position: absolute;
+    height: 50px;
+    letter-spacing: 2px;
+    color: #fff;
+    top: 100px;
+    left: 30%;
+    font-family: bodoni !important;
+    font-size: 40px
+}
+
+.maincontactheading {
+    display: none;
+    font-family: bodoni !important;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .flexer div img {
     margin: 5px 0px 0px 0px;
     width: 75px;
@@ -522,9 +598,10 @@ header {
     transition: all 0.5s ease;
 } */
 
-.filterSection{
-    margin-top:50px;
+.filterSection {
+    margin-top: 50px;
 }
+
 .filterMenu {
     border: 1px solid #eee;
     width: 600px;
@@ -534,31 +611,37 @@ header {
     justify-content: space-around;
     background: #fff;
     padding: 10px;
-    position:absolute;top:-40px;left:0px;right:0px;margin-left:auto;margin-right:auto;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .filterMenu div {
     padding: 5px;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif !important;
-    color:#a5a5a5;
-    cursor:pointer;
-    transition : all 0.5s ease;
+    color: #a5a5a5;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
-.activeFilter{
-    color:#000 !important;
-    transition : all 0.5s ease;
+.activeFilter {
+    color: #000 !important;
+    transition: all 0.5s ease;
 }
 
 .template-image {
     display: none;
-    padding-top:50px;
+    padding-top: 50px;
 }
 
-.desktopFilter{
-    display:block !important;
-    min-height:600px;margin-bottom:50px;
+.desktopFilter {
+    display: block !important;
+    min-height: 600px;
+    margin-bottom: 50px;
 }
 
 .templateImageWrapper {
@@ -746,6 +829,7 @@ header {
     font-family: bodoni;
     width: 380px;
     line-height: 1.2;
+    padding-top: 20px;
 }
 
 .firstHead-underline {
@@ -813,11 +897,12 @@ header {
 }
 
 .contact-form {
-    width: 500px;
+    width: 450px;
     min-height: 200px;
-    margin: 20px;
-    /* border: 1px solid #a5a5a5; */
+    margin: -20px 20px 20px 20px;
+    border: 1px solid #a5a5a5;
     padding: 20px;
+    background: #fff;
 }
 
 /* forms  */
@@ -897,13 +982,31 @@ header {
 .formflexer {
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5); */
+    /* border-radius: 5px; */
     margin-top: 30px;
+    background: #000 url('/assets/homepage/earthbackground.png') no-repeat center;
+    background-size: cover;
+    background-position: center;
 }
 
-.form-flex {
-    flex: 0 0 50%;
+.form-flex:nth-child(1) {
+    flex: 0 0 40%;
+}
+
+.form-flex:nth-child(2) {
+    flex: 0 0 18%;
+}
+
+.form-flex:nth-child(3) {
+    flex: 0 0 23%;
+    /* margin-left:100px; */
+}
+
+.flagContainer {
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 45px;
 }
 
 .submitButton {
@@ -930,25 +1033,26 @@ header {
 }
 
 .addressHeader {
-    font-size: 16px;
-    color: #6f6f6f;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
 }
 
 .phone-section {
-    margin: 50px 0px;
+    margin: 40px 0px;
 }
 
 .line1 {
     width: 80px;
     height: 1.2px;
-    background: #a5a5a5;
+    background: #fff;
     margin-top: 5px;
 }
 
 .line2 {
     width: 120px;
     height: 1.2px;
-    background: #a5a5a5;
+    background: #fff;
     margin-top: 6px;
     margin-bottom: 20px;
 }
@@ -956,14 +1060,14 @@ header {
 .phone-line1 {
     width: 60px;
     height: 1.2px;
-    background: #a5a5a5;
+    background: #fff;
     margin-top: 5px;
 }
 
 .phone-line2 {
     width: 100px;
     height: 1.2px;
-    background: #a5a5a5;
+    background: #fff;
     margin-top: 6px;
     margin-bottom: 20px;
 }
@@ -971,25 +1075,27 @@ header {
 .mail-line1 {
     width: 40px;
     height: 1.2px;
-    background: #a5a5a5;
+    background: #fff;
     margin-top: 4px;
 }
 
 .mail-line2 {
     width: 100px;
     height: 1.2px;
-    background: #a5a5a5;
+    background: #fff;
     margin-top: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .actualTextValue {
-    font-size: 16px;
-    color: #6f6f6f;
+    font-size: 15px;
+    color: #fff;
     margin: 5px 0px 2.5px 0px;
     font-weight: 500;
 }
-
+.phoneNumber{
+    color: #fff !important;
+}
 .questionFLexer {
     display: flex;
     flex-wrap: wrap;

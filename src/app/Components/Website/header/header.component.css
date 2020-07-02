@@ -1,0 +1,16 @@
+.pdfDownloadbutton{
+    padding:10px 20px;
+    border-radius:0px;
+    border:1px solid #f8c82c !important;
+    background-color:#f8c82c !important;
+    color:#000 !important;
+}
+
+.demobutton{
+    padding:10px 20px;
+    border-radius:0px;
+    border:1px solid #000 !important;
+    background-color:#000 !important;
+    color:#fff !important;
+}
+

@@ -1,2 +1,31 @@
-.carousel-indicators li{margin:5px;}
-/* .form__field.is-invalid{border-bottom:1px solid red;} */
+.carousel-indicators li {
+    margin: 5px;
+}
+
+.form__field.is-invalid {
+    border-bottom: 1px solid red;
+}
+
+.leftImageWrapper {
+    position: relative;
+}
+
+.playbutton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.pausebutton {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+}

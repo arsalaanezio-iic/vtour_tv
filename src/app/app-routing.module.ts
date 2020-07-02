@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WebsiteContainerComponent } from './Components/Website/website-container/website-container.component';
 import { HomeComponent } from './Components/Website/webpages/home/home.component';
 import { PagenotfoundComponent } from './Components/Errorpages/pagenotfound/pagenotfound.component';
+import { PrivacyPolicyComponent } from './Components/Website/privacy-policy/privacy-policy.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,10 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent }
     ]
+  },
+
+  {
+    path: 'privacy-policy', component: PrivacyPolicyComponent
   },
 
   {

@@ -3,21 +3,55 @@
 
         <div class="col-xs-4">
             <div class="menuSection">
-                <div></div>
-                <div></div>
-                <div></div>
+                <img src="assets/homepage/logo.png" width="100%">
             </div>
         </div>
-        <div class="col-xs-4 text-center">
+        <!-- <div class="col-xs-2 text-center">
             <div class="logoWrapper">
                 <img src="assets/homepage/vtour_logo.png" width="100%" />
             </div>
-        </div>
-        <div class="col-xs-4 menulinkwrapper">
-            <div class="menu-link"><a href="assets/pdf/VTour.pdf" style="color:#6f6f6f;text-decoration:none" download>Download</a></div>
-            <div class="menu-link"><a href="https://vtour.inkincaps.com/" target="_blank" style="color:#6f6f6f;text-decoration:none">Demo</a></div>
+        </div> -->
+        <div class="col-xs-8 menulinkwrapper">
+            <!-- <div class="menu-link"><a class="btn btn-default" style="color:#6f6f6f;text-decoration:none">Privacy Policy</a></div> -->
+            <div class="menu-link demoButtonWrapper"><a target="_blank"
+                    class="btn btn-default demobutton contacts-button"
+                    style="color:#6f6f6f;text-decoration:none">Request A Demo</a>
+            </div>
+            <div class="menu-link pdfdownloadWrapper"><a href="assets/pdf/VTour.pdf"
+                    class="btn btn-default pdfDownloadbutton" style="color:#6f6f6f;text-decoration:none" download>Pdf
+                    Download</a></div>
+            <div class="menu-link hamburger-wrapper">
+                <a class="btn btn-default hamburger-button" style="color:#6f6f6f;text-decoration:none"
+                    (click)="openMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+            </div>
+            <div class="menu-link"><a class="btn btn-default"
+                    style="color:#6f6f6f;text-decoration:none;padding:0px;border:1px solid transparent;margin-top:5px;"><img
+                        src="/assets/homepage/australia.png" width="35px" /></a></div>
+            <div class="menu-link"><a class="btn btn-default"
+                    style="color:#6f6f6f;text-decoration:none;padding:0px;border:1px solid transparent;margin-top:5px;"><img
+                        src="/assets/homepage/india.png" width="35px" /></a></div>
+            <div class="menu-link"><a class="btn btn-default"
+                    style="color:#6f6f6f;text-decoration:none;padding:0px;border:1px solid transparent;margin-top:5px;"><img
+                        src="/assets/homepage/qatar.png" width="35px" /></a></div>
+            <div class="menu-link"><a class="btn btn-default"
+                    style="color:#6f6f6f;text-decoration:none;padding:0px;border:1px solid transparent;margin-top:5px;"><img
+                        src="/assets/homepage/saudi.png" width="35px" /></a></div>
+
+
+
 
         </div>
 
     </div>
 </header>
+<div class="dropdownMenuWrapper" style="">
+    <a href="assets/pdf/VTour.pdf" class="btn btn-default pdfDownloadbutton"
+        style="width:150px;color:#6f6f6f;text-decoration:none" download>Pdf
+        Download</a>
+    <a class="btn btn-default demobutton contacts-button"
+        style="color:#6f6f6f;text-decoration:none;width:150px;">Request A Demo</a>
+</div>
