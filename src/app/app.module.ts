@@ -15,7 +15,16 @@ import { FooterComponent } from './Components/Website/footer/footer.component';
 import { HomeComponent } from './Components/Website/webpages/home/home.component';
 import { ApiService } from './services/api.service';
 import { PrivacyPolicyComponent } from './Components/Website/privacy-policy/privacy-policy.component';
-
+import { FooterarabicComponent } from './Components//Websitearabic/footerarabic/footerarabic.component';
+import { HeaderarabicComponent } from './Components/Websitearabic/headerarabic/headerarabic.component';
+import { PrivacyPolicyarabicComponent } from './Components/Websitearabic/privacy-policyarabic/privacy-policyarabic.component';
+import { HomearabicComponent } from './Components/Websitearabic/webpages/homearabic/homearabic.component';
+import { WebsiteContainerArabicComponent } from './Components/Websitearabic/website-container-arabic/website-container-arabic.component';
+import { FooterenglishComponent } from './Components/Websiteenglish/footerenglish/footerenglish.component';
+import { HeaderenglishComponent } from './Components/Websiteenglish/headerenglish/headerenglish.component';
+import { PrivacyPolicyenglishComponent } from './Components/Websiteenglish/privacy-policyenglish/privacy-policyenglish.component';
+import { WebsiteContainerEnglishComponent } from './Components/Websiteenglish/website-container-english/website-container-english.component';
+import { HomeenglishComponent } from './Components/Websiteenglish/webpages/homeenglish/homeenglish.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +34,16 @@ import { PrivacyPolicyComponent } from './Components/Website/privacy-policy/priv
     FooterComponent,
     HomeComponent,
     PrivacyPolicyComponent,
+    FooterarabicComponent,
+    HeaderarabicComponent,
+    PrivacyPolicyarabicComponent,
+    HomearabicComponent,
+    WebsiteContainerArabicComponent,
+    FooterenglishComponent,
+    HeaderenglishComponent,
+    PrivacyPolicyenglishComponent,
+    WebsiteContainerEnglishComponent,
+    HomeenglishComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

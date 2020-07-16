@@ -1,0 +1,22 @@
+/* .pdfDownloadbutton{
+    padding:10px 10px;
+    border-radius:0px;
+    border:1px solid #000000 !important;
+    background-color:#fff !important;
+    color:#000 !important;
+} */
+
+.demobutton{
+    padding:10px 10px;
+    border-radius:0px;
+    /* border:1px solid #dddddd !important;
+    background-color:#dddddd !important; */
+    color:#000 !important;
+}
+
+.panelActive{
+     /* border:1px solid #dddddd !important; */
+     color:#8c8c8c !important;
+     font-weight: bold;
+    background-color:#dddddd !important;
+}

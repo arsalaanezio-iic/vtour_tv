@@ -4,6 +4,10 @@ import { WebsiteContainerComponent } from './Components/Website/website-containe
 import { HomeComponent } from './Components/Website/webpages/home/home.component';
 import { PagenotfoundComponent } from './Components/Errorpages/pagenotfound/pagenotfound.component';
 import { PrivacyPolicyComponent } from './Components/Website/privacy-policy/privacy-policy.component';
+import { HomearabicComponent } from './Components/Websitearabic/webpages/homearabic/homearabic.component';
+import { WebsiteContainerArabicComponent } from './Components/Websitearabic/website-container-arabic/website-container-arabic.component';
+import { WebsiteContainerEnglishComponent } from './Components/Websiteenglish/website-container-english/website-container-english.component';
+import { HomeenglishComponent } from './Components/Websiteenglish/webpages/homeenglish/homeenglish.component';
 
 
 const routes: Routes = [
@@ -13,7 +17,18 @@ const routes: Routes = [
       { path: '', component: HomeComponent }
     ]
   },
-
+  {
+    path: 'sa', component: WebsiteContainerArabicComponent,
+    children: [
+      { path: '', component: HomearabicComponent }
+    ]
+  },
+  {
+    path: 'en', component: WebsiteContainerEnglishComponent,
+    children: [
+      { path: '', component: HomeenglishComponent }
+    ]
+  },
   {
     path: 'privacy-policy', component: PrivacyPolicyComponent
   },

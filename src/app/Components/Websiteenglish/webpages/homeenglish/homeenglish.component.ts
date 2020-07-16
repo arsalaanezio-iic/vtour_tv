@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChild,ElementRef, } from '@angular/core';
+import { Component, OnInit,ViewChild,ElementRef,} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ApiService } from 'src/app/services/api.service';
 import { Meta, Title } from '@angular/platform-browser';
@@ -6,11 +6,12 @@ import { Meta, Title } from '@angular/platform-browser';
 declare var $:any;
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-homeenglish',
+  templateUrl: './homeenglish.component.html',
+  styleUrls: ['./homeenglish.component.css']
 })
-export class HomeComponent implements OnInit {
+
+export class HomeenglishComponent implements OnInit {
   @ViewChild('howitworks', { read: ElementRef }) howitworks: ElementRef;
   eventSlider: any;
   virtualLobby:any;
@@ -18,7 +19,8 @@ export class HomeComponent implements OnInit {
   submitted = false;
   show = false;
   messageMail:any;
-  dataLayer:any;
+
+
 
   constructor(private fb: FormBuilder, private apiservice : ApiService,private title: Title, private meta: Meta) {
     this.contactForm = this.fb.group({
@@ -27,10 +29,10 @@ export class HomeComponent implements OnInit {
       mobile_number : ["", [Validators.required ,Validators.maxLength(10)]],
       message : ["", [Validators.required]]
     });
-    // this.title.setTitle(this.apiservice.englishtitle);
-    // this.meta.updateTag({ name: 'description', content: this.apiservice.englishdesc});
-    // this.meta.updateTag({ name: 'keywords', content: this.apiservice.englishkeywords});
 
+        // this.title.setTitle(this.apiservice.saudititle);
+        // this.meta.updateTag({ name: 'description', content: this.apiservice.saudidescription});
+        // this.meta.updateTag({ name: 'keywords', content: this.apiservice.saudikeywords});
   }
 
   ngOnInit(): void {
@@ -38,15 +40,15 @@ export class HomeComponent implements OnInit {
     this.filter("all");
 
     this.eventSlider = [
-      { "image": "assets/homepage/virtual-event-gallery-image-1.png", "alt": "virtual-event-gallery-image-1" },
-      { "image": "assets/homepage/virtual-event-gallery-image-2.png", "alt": "virtual-event-gallery-image-2" },
-      { "image": "assets/homepage/virtual-event-gallery-image-3.png", "alt": "virtual-event-gallery-image-3" },
-      { "image": "assets/homepage/virtual-event-gallery-image-4.png", "alt": "virtual-event-gallery-image-4" },
-      { "image": "assets/homepage/virtual-event-gallery-image-1.png", "alt": "virtual-event-gallery-image-1" },
-      { "image": "assets/homepage/virtual-event-gallery-image-2.png", "alt": "virtual-event-gallery-image-2" },
-      { "image": "assets/homepage/virtual-event-gallery-image-3.png", "alt": "virtual-event-gallery-image-3" },
-      { "image": "assets/homepage/virtual-event-gallery-image-4.png", "alt": "virtual-event-gallery-image-4" },
-      { "image": "assets/homepage/virtual-event-gallery-image-1.png", "alt": "virtual-event-gallery-image-1" }
+      { "image": "assets/homepage/event1.png" },
+      { "image": "assets/homepage/event2.png" },
+      { "image": "assets/homepage/event3.png" },
+      { "image": "assets/homepage/event4.png" },
+      { "image": "assets/homepage/event1.png" },
+      { "image": "assets/homepage/event2.png" },
+      { "image": "assets/homepage/event3.png" },
+      { "image": "assets/homepage/event4.png" },
+      { "image": "assets/homepage/event1.png" }
     ]
 
     this.virtualLobby = [
@@ -170,10 +172,7 @@ export class HomeComponent implements OnInit {
       });
     }
   }
-  // onClickLinkedin(){
-  //   this.dataLayer.push({'event' : 'linkedin', 'formName' : 'Contact Us'});
-  // }
-
+  
   pause_howitworks(){
     this.howitworks.nativeElement.pause(); 
     $(".playbutton").toggle(500);

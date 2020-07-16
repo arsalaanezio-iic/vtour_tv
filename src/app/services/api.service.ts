@@ -11,7 +11,13 @@ var apis = {
   providedIn: 'root'
 })
 export class ApiService {
+// englishtitle= "dnabhasbchbahbca";
+// englishdesc = "drrcvtybvcfdxdcfvgbhtyfrdqdwtqfguhwjqwbcgsvg";
+// englishkeywords = "sbabbsabcabschbabcsb";
 
+// saudititle = "jhahbasjbhjab";
+// saudidescription = "lorembdhasbchbashcbabca";
+// saudikeywords = "bcbcbc";
   constructor(private http : Http) { }
 
   contact(body) {

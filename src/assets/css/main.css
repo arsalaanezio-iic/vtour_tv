@@ -1089,7 +1089,7 @@ header {
 
 .actualTextValue {
     font-size: 15px;
-    color: #fff;
+    color: #fff !important;
     margin: 5px 0px 2.5px 0px;
     font-weight: 500;
 }
